@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "Wvl4iwxc5oM/VeUyg84jSyubn2UTMTDYWDhf8JXNJUw=",
+  "Source": "ImageUploader",
+  "BasePath": "_content/ImageUploader",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ImageUploader\\wwwroot",
+      "Source": "ImageUploader",
+      "ContentRoot": "C:\\Users\\Amira Elgarf\\Desktop\\SKAss2\\ImageUploader\\wwwroot\\",
+      "BasePath": "_content/ImageUploader",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Amira Elgarf\\Desktop\\SKAss2\\ImageUploader\\wwwroot\\InterfaceForm.html",
+      "SourceId": "ImageUploader",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amira Elgarf\\Desktop\\SKAss2\\ImageUploader\\wwwroot\\",
+      "BasePath": "_content/ImageUploader",
+      "RelativePath": "InterfaceForm.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\InterfaceForm.html"
+    }
+  ]
+}
