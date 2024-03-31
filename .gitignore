@@ -1,0 +1,8 @@
+# Visual Studio / .NET
+*.obj
+*.pdb
+*.exe
+*.dll
+*.log
+bin/
+obj/
