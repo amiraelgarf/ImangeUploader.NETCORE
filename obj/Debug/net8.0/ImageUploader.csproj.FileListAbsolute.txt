@@ -30,3 +30,10 @@ C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Newtonsoft.J
 C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\obj\Debug\net8.0\ImageUploader.csproj.CopyComplete
 C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\ImageUploader.staticwebassets.runtime.json
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\obj\Debug\net8.0\ImageUploader.sourcelink.json
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\web.config
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Data\79809314-0a2a-45c9-ad9b-c4da03a7da56.json
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Data\c6291412-7a5f-47fc-af3f-91db619ab0de.json
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Data\f81453de-0b36-46db-8ea4-ff74db685d09.json
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Data\04c34f4d-2ff6-4779-82bd-8af3878b86ba.json
+C:\Users\Amira Elgarf\Desktop\SKAss2\ImageUploader\bin\Debug\net8.0\Data\e2af9fa5-afeb-4757-a943-7bbe7046c3c6.json

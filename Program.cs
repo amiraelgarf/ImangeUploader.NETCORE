@@ -2,14 +2,29 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
-using Newtonsoft.Json; 
+using Newtonsoft.Json;
 using System;
 using System.IO;
 
 
 
-var app = WebApplication.CreateBuilder(args).Build();
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.WithOrigins("http://127.0.0.1:5500");
+        });
+});
+
+var app = builder.Build();
 app.UseStaticFiles();
+app.UseCors();
+
+
+app.MapGet("/test", () => "Hello World!");
 
 var uploadsDirectory = Path.Combine("wwwroot", "uploads");
 if (!Directory.Exists(uploadsDirectory))
@@ -25,6 +40,7 @@ if (!Directory.Exists(dataDirectory))
 
 app.MapPost("/upload", async (HttpContext context) =>
 {
+    var form = await context.Request.ReadFormAsync();
     string title = context.Request.Form["title"];
     var file = context.Request.Form.Files["file"];
 
@@ -34,6 +50,7 @@ app.MapPost("/upload", async (HttpContext context) =>
     }
 
     var id = Guid.NewGuid().ToString();
+
     var fileName = $"{id}_{file.FileName}";
     var filePath = Path.Combine("wwwroot", "uploads", fileName);
 
@@ -53,7 +70,7 @@ app.MapPost("/upload", async (HttpContext context) =>
     var jsonFilePath = Path.Combine("Data", $"{id}.json");
     File.WriteAllText(jsonFilePath, jsonData);
 
-    return Results.Redirect($"/picture/{id}");
+    return Results.Ok(new { id = id });
 });
 
 app.MapGet("/picture/{id}", (string id) =>
@@ -82,7 +99,7 @@ app.MapGet("/picture/{id}", (string id) =>
     return Results.Ok(htmlContent);
 });
 
-app.Run();
+app.Run("http://localhost:3000");
 
 
 public class UploadedImage

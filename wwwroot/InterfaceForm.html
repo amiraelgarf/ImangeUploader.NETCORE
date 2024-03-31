@@ -23,9 +23,10 @@
             const formData = new FormData(form);
             
             try {
-                const response = await fetch(form.action, {
+                const response = await fetch("http://127.0.0.1:3000/upload", {
                     method: form.method,
-                    body: formData
+                    body: formData,
+
                 });
                 
                 if (!response.ok) {
@@ -36,7 +37,10 @@
 
                 const responseData = await response.json();
                 const imageId = responseData.id;
-                alert("Image uploaded successfully! ID: " + imageId);
+
+                console.log(imageId);
+
+                //alert("Image uploaded successfully! ID: " + imageId);
                 
                 // Redirect to the uploaded image page
                 window.location.href = "/picture/" + imageId;
